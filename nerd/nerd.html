@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.font{
+    font-size: 30px;
+}
+.esasdiv div {
+
+    margin:  50px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="esasdiv">
+        <div class="font"  style=" width:500px;display: flex;justify-content: space-around;">
+            <img width="60px" src="https://emojigraph.org/media/joypixels/person_1f9d1.png" alt="">
+            <button onclick="user1()"> USER 1</button>
+            <h5 style="margin: 0;">Netice:</h5>
+            <h5 style="margin: 0;"  id="ok"></h5>
+        </div>
+        <div  class="font"  style=" width:500px;display: flex;justify-content: space-around;">
+            <img width="60px" src="https://i.pinimg.com/550x/96/9f/c3/969fc39afee9fd630b2d01c652e9fc90.jpg" alt="">
+            <button onclick="user2()">USER 2</button>
+            <h5 style="margin: 0;">Netice</h5>
+            <h5 style="margin: 0;" id="ok2"></h5>
+    
+        </div>
+        
+        <div class="font"  style=" width:500px;display: flex; margin-left: 95px;">
+            <img style="" width="60px" src="https://play-lh.googleusercontent.com/w4LQqo0Dkyf8iClbKgdNN3c9-WjPl1Ij96VdPt58WP_iaIFuCxgqUHF-hCHCCleQacU" alt="">
+            <button style="margin-left: 70px;" onclick="showWinner(oyuncu1,oyuncu2)">QALIB</button>
+            <h5 style="margin: 0;margin-left: 160px;" id="haw3"></h5>
+    
+    
+        </div>
+    </div>
+ 
+    <script>
+
+                    
+
+
+var oyuncu1 = 0;
+var oyuncu2 = 0;
+
+function user1(){
+oyuncu1=Math.random()
+if(oyuncu1<0.16){
+    oyuncu1 = 1;
+ document.getElementById("ok").innerHTML=1
+return oyuncu1;
+
+}else if(oyuncu1<=0.32){
+    oyuncu1 = 2;
+    document.getElementById("ok").innerHTML=2
+    return oyuncu1;
+}else if(oyuncu1<=0.48){
+    oyuncu1 = 3;
+    document.getElementById("ok").innerHTML=3
+    return oyuncu1;
+}else if(oyuncu1<=0.64){
+    oyuncu1 = 4;
+    document.getElementById("ok").innerHTML=4
+    return oyuncu1;
+}else if(oyuncu1<=0.8){
+    oyuncu1 = 5;
+    document.getElementById("ok").innerHTML=5
+    return oyuncu1;
+}else{
+    oyuncu1 = 6;
+    document.getElementById("ok").innerHTML=6
+    return oyuncu1;
+}
+
+}
+function user2(){
+    oyuncu2=Math.random()
+if(oyuncu2<0.16){
+    oyuncu2 = 1;
+    document.getElementById("ok2").innerHTML=1
+return oyuncu2;
+
+}else if(oyuncu2<=0.32){
+    oyuncu2 = 2;
+    document.getElementById("ok2").innerHTML=2
+    return oyuncu2
+}else if(oyuncu2<=0.48){
+    oyuncu2 = 3;
+    document.getElementById("ok2").innerHTML=3
+    return oyuncu2
+}else if(oyuncu2<=0.64){
+    oyuncu2 = 4;
+    document.getElementById("ok2").innerHTML=4
+    return oyuncu2
+}else if(oyuncu2<=0.8){
+    oyuncu2 = 5;
+    document.getElementById("ok2").innerHTML=5
+    return oyuncu2
+}else{
+    oyuncu2 = 6;
+    document.getElementById("ok2").innerHTML=6
+    return oyuncu2
+}
+}
+
+function showWinner(netice1,netice2){
+    console.log(netice1)
+        console.log(netice2)
+  
+    if(netice1==netice2 ){
+     if(netice1!=0 && netice2!=0){
+        document.getElementById("haw3").innerHTML="beraberdir"
+     }
+       
+     
+     
+    }else if(netice1>netice2){
+        document.getElementById("haw3").innerHTML="USER-1 QALIBDIR"
+    }else {
+        document.getElementById("haw3").innerHTML="user2 qalibdir"
+    }
+}
+
+    </script>
+</body>
+</html>

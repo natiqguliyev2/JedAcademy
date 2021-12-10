@@ -1,0 +1,33 @@
+body{
+    color: white;
+    background-color: rgb(0, 0, 0);
+
+}
+.align{
+    text-align: center;
+}
+.display{
+    display: flex;
+    justify-content: space-between;
+}
+.flex{
+    display: flex;
+    align-items: center;
+     justify-content: center;
+     flex-direction: column;
+}
+.line{
+    height: 1px;
+    width: 240px;
+    background-color: rgb(181, 245, 224);
+}
+.fontsmall{
+    font-family: 'Zen Kurenaido', sans-serif;
+
+}
+.fontbig{
+    font-family: 'Anton', sans-serif;
+}
+.fontlittle{
+    font-family: 'Quicksand', sans-serif;
+}

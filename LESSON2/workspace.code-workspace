@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"name": "jed academi",
+			"path": "..\\..\\jed academi"
+		},
+		{
+			"name": "WEBSITE1",
+			"path": "..\\..\\WEBSITE1"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "WEBSITE1"
+	}
+}

@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+  </style>
+</head>
+<body>
+<form id="for" action="">
+  <label for="">yaz bura:</label>
+  <input id="inputt" type="text">
+  <button id="btn" >click up</button>
+</form>
+  
+    <div id="resultdiv" style="width: 300px;height: 300px;background-color: aquamarine;"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function(){
+            $('#btn').click(function(){
+                $.ajax({
+                    url:"http://universities.hipolabs.com/search?country=Azerbaijan",
+                    dataType: 'json',
+                    type: "GET",
+                    success: function(data){
+                   
+                      for(i=0;i<data.length;i++){
+                   document.write(data[i].name)
+                   
+                      }
+                        console.log(data)
+                        $('#resultdiv').append(data.setup+ " "+data.delivery+ " <br>");
+                    },
+                    error: function(xhr, exception){
+                        console.error(exception)
+                    },
+        
+                })
+            });
+       });
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+  <!-- // const baseUrl = "https://api.punkapi.com/v2/beers";
+    //  $(document).ready(function(){
+    //         $('#button').click(function(){
+    //             $.ajax({
+    //                 url:"http://universities.hipolabs.com/search?country=Azerbaijan",
+    //                 dataType: 'json',
+    //                 type: "GET",
+    //                 success: function(data){
+                   
+    //                   for(i=0;i<data.length;i++){
+    //                document.write(data[i].name)
+                   
+    //                   }
+    //                     console.log(data)
+    //                     $('#resultdiv').append(data.setup+ " "+data.delivery+ " <br>");
+    //                 },
+    //                 error: function(xhr, exception){
+    //                     console.error(exception)
+    //                 },
+        
+    //             })
+    //         });
+    //    });
+ -->
+
+
+<!-- 
+</script>
+</body>
+
+
+</html> -->

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(59, 53, 52);
+        }
+        .box {
+            /* width: 500px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sual {
+            font-size: 26px;
+            /* padding: 10px; */
+            border: 1px solid rgb(177, 152, 152);
+            border-radius: 30px;
+            width: 800px;
+            height: 40px;
+        }
+
+        #sual:hover {
+            color: white;
+            background-color: rgb(70, 69, 70);
+        }
+
+        .border {
+            font-size: 20px;
+            width: 200px;
+            border: 1px solid rgb(177, 152, 152);
+            border-radius: 7px;
+            height: 30px;
+        }
+
+        .border:hover {
+            color: white;
+            background-color: rgb(70, 69, 70);
+        }
+
+        #submit :hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <label for="">
+            <h2 style="color: rgb(179, 95, 95);">SUAL:</h2>
+        </label>
+        <input id="sual" type="text">
+        <label for="">
+            <h3 style="color: rgb(255, 0, 179);">a)</h3>
+        </label>
+        <input class="border" id="a" type="text">
+        <label for="">
+            <h3 style="color: rgb(235, 133, 0);">b)</h3>
+        </label>
+        <input class="border" id="b" type="text">
+        <label for="">
+            <h3 style="color: rgb(63, 66, 255);">c)</h3>
+        </label>
+        <input class="border" id="c" type="text">
+        <label for="">
+            <h3 style="color: rgb(15, 155, 39);">Cavab:</h3>
+        </label>
+        <input class="border" id="cavab" type="text"><br><br>
+
+        <button style="border-radius: 10px;background-color: rgb(255, 38, 0);" id="submit">
+            <h2>Elave et</h2>
+        </button>
+
+    </div>
+
+
+
+
+
+    <script>
+        var sual = document.getElementById("sual");
+        var a = document.getElementById("a");
+        var b = document.getElementById("b");
+        var c = document.getElementById("c");
+        var cavab = document.getElementById("cavab");
+        var sumbit = document.getElementById("submit");
+
+
+
+        
+        sumbit.addEventListener("click", create);
+        function create() {
+           
+            if (sual.value == "" || a.value == "" || b.value == "" || c.value == "" || cavab.value == "") {
+                alert("XANANI DOLDUR!!!")
+            } else {
+            var oldQuestions = localStorage.getItem("suallar");
+            var oldQuestionsArr=JSON.parse(oldQuestions);
+        
+                if (cavab.value == "a" || cavab.value == "b" || cavab.value == "c") {
+                    var question = {
+                        "question": sual.value,
+                        "a": a.value,
+                        "b": b.value,
+                        "c": c.value,
+                        "cavab": cavab.value
+                    }
+                    if(oldQuestionsArr==null){
+             oldQuestionsArr=[];
+         }
+                    oldQuestionsArr.push(question);
+
+                    localStorage.setItem("suallar", JSON.stringify(oldQuestionsArr));
+                    sual.value = "";
+                    a.value = "";
+                    b.value = "";
+                    c.value = "";
+                    cavab.value = "";
+                } else {
+                    alert("CAVABI DUZGUN DAXIL ET!!!")
+                }
+
+            }
+
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

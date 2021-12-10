@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Nanum+Gothic&family=Scheherazade+New&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        body {
+            box-sizing: border-box;
+
+            margin: 0
+        }
+
+        p {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        header {
+            color: white;
+            width: 100%;
+            background-color: rgb(13, 17, 15);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        header h3 {
+            margin-left: 152px;
+        }
+
+        .linkdiv {
+
+            margin-right: 152px;
+
+            display: flex;
+            flex-direction: row;
+
+            align-items: center;
+
+        }
+
+        .linkdiv a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+        }
+
+        .imgdiv {
+            width: 50%;
+            height: 280px;
+            float: left;
+        }
+
+        img {
+
+            margin-top: 30px;
+            width: 100%;
+            height: 280px;
+        }
+
+        .hamisi {
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+            display: flex;
+
+            justify-content: space-between;
+            margin-bottom: 60px;
+        }
+
+        .busines {
+
+            margin-top: 30px;
+            width: 400px;
+         
+        }
+
+        .busines h1 {
+            margin: 0;
+            font-size: 48px;
+        }
+
+        .busines button {
+            color: white;
+            width: 120px;
+            background-color: rgb(32, 118, 255);
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .this {
+            color: white;
+            border-radius: 5px;
+            margin: auto;
+            background-color: rgb(74, 74, 102);
+            width: 100%;
+
+            text-align: center;
+            padding-top: 24px;
+            padding-bottom: 24px;
+        }
+
+        .card {
+
+            
+            width: 85%;
+        }
+
+        .card h1 {
+            margin-left: 20px;
+        }
+
+        .card p {
+            margin-left: 20px;
+        }
+
+        .cardbutton {
+            border-radius: 10px;
+
+            border: 1px solid rgb(211, 192, 192);
+            font-size: 30px;
+
+
+        }
+
+        .cardbutton button {
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+            color: white;
+
+            padding: 7px 10px;
+            background-color: rgb(12, 84, 172);
+        }
+
+        .esas {
+
+            flex-wrap: wrap;
+            width: 100%;
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+
+
+
+        }
+
+        .carddiv1 {
+            border-radius: 10px;
+            margin-top: 40px;
+            width: 340px;
+            border: 1px solid rgb(211, 192, 192);
+        }
+
+        .esasthis {
+            margin: auto;
+            width: 80%;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .icon {
+           margin-top: 20px;
+           visibility: hidden;
+            width: 20px;
+            height: 20px;
+        }
+
+        @media (max-width:1285px) {
+            .esas {
+
+                justify-content: center;
+            }
+        }
+
+        
+@media(max-width:1000px){
+    .linkdiv{
+        display: none;
+    }
+    .icon{
+visibility: visible;
+    }
+}
+   
+
+        footer {
+            color: white;
+            margin-top: 50px;
+            width: 100%;
+            background-color: rgb(13, 17, 15);
+            text-align: center;
+            padding-top: 48px;
+            padding-bottom: 48px;
+        }
+    </style>
+</head>
+
+<body>
+  
+    <header>
+
+        <h3>Start Bootstrap</h3>
+
+        <div class="linkdiv">
+
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+            <a href="">Servies</a>
+           
+        </div>
+        <img class="icon"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-lMDuD5LmZ8dvAe0_0clH2bv8_TdwWaGODoAsi8atpqPUGTW2bQbWlK8acS-1dPOpgG0&usqp=CAU"
+        alt="">
+ 
+
+    </header>
+    <div class="hamisi">
+        <div class="imgdiv">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5244b9e9-7217-49ee-822c-62f459de066a/ddr11sp-f45c3e4c-3b31-4a3b-b5bc-e59704b9bbfa.jpg/v1/fill/w_1600,h_1308,q_75,strp/anton_chigurh_by_juarezricci_ddr11sp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTMwOCIsInBhdGgiOiJcL2ZcLzUyNDRiOWU5LTcyMTctNDllZS04MjJjLTYyZjQ1OWRlMDY2YVwvZGRyMTFzcC1mNDVjM2U0Yy0zYjMxLTRhM2ItYjViYy1lNTk3MDRiOWJiZmEuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.P0Ck9GlfvcZW5W20KK8yUmFkGFLsk8nOrrAM94CGo4Q"
+                alt="">
+        </div>
+        <div class="busines">
+            <h1>Business Name or <br> Tagline</h1>
+            <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it
+                makes a great use of the standard Bootstrap core components. Feel free to use this template for any
+                project you want!</p>
+            <button>Call to Action</button>
+        </div>
+    </div>
+    <div class="esasthis">
+        <div class="this">
+            <p>This call to action card is a great place to showcase some important information or display a clever
+                tagline!
+            </p>
+        </div>
+        <div class="esas">
+            <div class="carddiv1">
+                <div class="card">
+                    <h1>Card One</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, iste velit porro quod earum
+                        ullam obcaecati
+                        deleniti consequatur, cupiditate, assumenda aut deserunt natus magni! Veritatis inventore
+                        voluptatum debitis
+                        blanditiis impedit?</p>
+
+                </div>
+                <div class="cardbutton">
+                    <button>More info</button>
+                </div>
+            </div>
+
+            <div class="carddiv1">
+                <div class="card">
+                    <h1>Card One</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, iste velit porro quod earum
+                        ullam obcaecati
+                        deleniti consequatur, cupiditate, assumenda aut deserunt natus magni! Veritatis inventore
+                        voluptatum debitis
+                        blanditiis impedit?</p>
+
+                </div>
+                <div class="cardbutton">
+                    <button>More info</button>
+                </div>
+            </div>
+
+            <div class="carddiv1">
+                <div class="card">
+                    <h1>Card One</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, iste velit porro quod earum
+                        ullam obcaecati
+                        deleniti consequatur, cupiditate, assumenda aut deserunt natus magni! Veritatis inventore
+                        voluptatum debitis
+                        blanditiis impedit?</p>
+
+                </div>
+                <div class="cardbutton">
+                    <button>More info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        Copyright Your Website 2021
+    </footer>
+
+    <div>
+
+    </div>
+</body>
+
+</html>

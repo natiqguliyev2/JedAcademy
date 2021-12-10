@@ -1,0 +1,272 @@
+
+.row img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 600px;
+position: absolute;
+
+object-fit: cover;
+}
+.hello{
+  
+  
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    z-index: 2;
+}
+.aboutme{
+    
+    /* margin-left: 0px; */
+    margin-right: 0px;
+  padding: 30px;
+}
+.aboutme a{
+  transition: 0.3s;
+    margin: 10px;
+}
+.aboutme a:hover{
+    color: red;
+}
+.about:hover{
+    box-shadow:2px 1px 17px 2px rgb(77, 49, 49);
+}
+.about{
+    z-index: 3;
+    position: relative;
+    top: -100px;
+    background-color: rgb(11, 11, 11);
+    box-shadow: 1px 1px 3px 1px rgb(15, 15, 15);
+    padding: 40px;
+    border: 1px solid black;
+    margin: auto;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.aboutimg img{
+    object-fit: cover;
+
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+}
+.expertises{
+    padding-top: 15px;
+     background-color:  rgb(10, 9, 9);
+}
+
+.servicesimg{
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.servicesimg img{
+    width: 355px;
+    height: 210px;
+}
+.servicesimg img:hover{
+    transition: 1.5s;
+    transform: rotateX(180deg);
+}
+.cartdiv{
+    
+    gap: 25px;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.cart{
+    border-radius: 10px;
+    padding: 25px;
+    width: 47%;
+     border: 1px solid white;
+    
+}
+.cart:hover{
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow: 1px 5px rgb(207, 183, 183);
+}
+.cart:hover p{
+    color: rgb(235, 220, 220);
+}
+.carttext{
+    padding: 3px;
+   color:rgb(2, 1, 1);
+    border-radius: 10px;
+    width: 175px;
+     background-color: rgb(255, 43, 6);
+}
+.design:hover{
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow: 2px 1px rgb(207, 183, 183);
+}
+.design:hover p{
+    color: rgb(233, 172, 172);
+}
+.together{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:300px;
+    background-attachment: fixed;
+  background-size: cover;
+    background-image: url("IMG_20210928_153540.jpg");
+}
+/* .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  } */
+  /* .swiper-slide img {
+    display: block;
+    width: 100%;
+  } */
+
+/* 
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slid {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slid img {
+    display: block;
+    width: 100%;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+  /* .img{
+      width: 300px;
+      height: 300px;
+  } */
+#btnleft,#btnright{
+    background-color: steelblue;
+    width: 60px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+#btnright:hover{
+    background-color: rgb(255, 123, 0);
+    
+    transform: scale(1.2);
+}
+#btnleft:hover{
+    background-color:rgb(255, 123, 0);
+    
+    transform: scale(1.3);
+}
+
+.letswork{
+    position: absolute; 
+    width: 100%;
+    height: 300px;
+    z-index:0;
+    background-color: rgba(0, 0, 0, 0.507);
+}
+.together a{
+    text-align: center;
+    width: 100px;
+    border: 1px solid white; 
+    text-decoration: none;
+    color: white;
+}
+.design{
+    padding:10px; 
+     width: 330px;
+      text-align: center;
+      background-color: black;
+}
+.touch{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid white;
+
+}
+.touch:hover{
+    transition: 0.5s;
+    transform: scale(1.01);
+    box-shadow: 2px 1px rgb(207, 183, 183);
+}
+.touch a{
+   
+    color: rgb(211, 148, 148);
+}
+.touch:hover a{
+    text-decoration: none;
+}
+
+.forminput{
+ 
+    color: white;
+    width: 49%;
+    height: 50px;
+    background-color: rgb(18, 19, 20);
+}
+.inputsubject{
+    width: 100%;
+    height: 50px;
+    background-color:  rgb(18, 19, 20);
+}
+.massageinput{
+    width: 100%;
+    height: 90px;
+    background-color:  rgb(18, 19, 20);
+
+}
+.send{
+    padding: 10px;
+    border-radius: 10px;
+    width: 190px;
+    color: white;
+    background-color: rgb(11, 34, 14);
+    transition: 0.5s;
+}
+.send:hover{
+    color: rgb(0, 76, 255);
+    background-color: rgb(165, 59, 11);
+}
+#car{
+    position: absolute;
+      width: 330px;
+      height: 330px; 
+      background-color: rgba(0, 0, 0, 0.733);
+    opacity: 0;
+    transition:opacity 0.7s;
+
+}
+#esas:hover > #car {
+
+opacity: 1;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button" >click up</button>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+      const baseUrl = "https://api.punkapi.com/v2/beers";
+
+    
+         $(document).ready(function(){
+            $('#button').click(function(){
+                $.ajax({
+                    url:"http://universities.hipolabs.com/search?country=Azerbaijan",
+                    dataType: 'json',
+                    type: "GET",
+                    success: function(data){
+                   
+                      for(i=0;i<data.length;i++){
+                   document.write(data[i].name)
+                   
+                      }
+                        console.log(data)
+                        $('#resultdiv').append(data.setup+ " "+data.delivery+ " <br>");
+                    },
+                    error: function(xhr, exception){
+                        console.error(exception)
+                    },
+        
+                })
+            });
+       });
+
+</script>
+</body>
+</html>

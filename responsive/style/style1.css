@@ -1,0 +1,62 @@
+.container{
+
+}
+.row{
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+header nav{
+    display: flex;
+    gap: 5px;
+
+}
+header nav a{ 
+    display: flex;
+    align-items: center;
+  
+    padding: 10px 15px;
+    height: 66px;
+}
+.slider.container{
+    height: 533px;
+    background: url("https://demo.colorlib.com/dazzling/wp-content/uploads/sites/54/2013/01/homev_updated1_02.jpg") center ;
+    background-size: cover;
+}
+.caption{
+    height: 100%;
+    align-items: flex-end;
+}
+.text-holder{
+    margin-bottom: 60px;
+}
+.green{
+    background: #1fa67a;
+    background: rgba(31,166,122,.7);
+    font-weight: 400;
+    font-size: 24px;
+    max-width: 640px;
+    display: inline-block;
+    padding: 12px 20px;
+    margin-bottom: 0;
+    color: #fff;
+}
+.black{
+    background: #3b3b3b;
+    background: rgba(59,59,59,.8);
+    display: block;
+    color: #ddd;
+    max-width: 600px;
+    padding: 12px 20px;
+}
+@media (max-width: 1024px) {
+    .pc{
+        display: none !important;
+    }
+}
+@media (min-width:1024px) {
+        .mobile{
+            display: none !important;
+        }
+}

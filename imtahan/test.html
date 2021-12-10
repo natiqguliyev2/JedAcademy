@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Zen+Kurenaido&display=swap"
+        rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            background-image: url("https://st.depositphotos.com/2760890/3426/i/950/depositphotos_34267961-stock-photo-orange-background.jpg");
+        }
+
+        .box {
+            margin: 20px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 30px;
+            color: rgb(2, 26, 42);
+        }
+
+        .radio {
+            width: 24px;
+            height: 24px;
+        }
+
+        h1 {
+            padding: 26px;
+            margin: 0;
+            font-family: 'Dancing Script', cursive;
+            color: rgb(22, 98, 98);
+            display: flex;
+            justify-content: center;
+        }
+
+        #btn {
+            margin: 10px;
+            font-size: 26px;
+            background-color: rgb(102, 128, 58);
+            border-radius: 20px;
+            width: 350px;
+            height: 50px;
+        }
+
+        #btn:hover {
+            color: white;
+            background-color: rgb(24, 17, 10);
+        }
+     .answer{
+         width: 500px;
+         height: 250px;
+         /* border: 1px solid black; */
+         margin: auto;
+     }
+   
+    </style>
+</head>
+
+<body>
+
+    <h1>İMTAHANA XOŞ GELMİSİNİZ.</h1>
+    <script>
+
+        x = localStorage.getItem("suallar");
+        console.log(x)
+        var arr = JSON.parse(x);
+        for (i = 0; i < arr.length; i++) {
+            document.write(`<div class="box"><p>${i + 1}) ${arr[i].question}  </p> <input class="radio" type="radio"name="question${i}" value="a">${arr[i].a} 
+    <input class="radio" type="radio"name="question${i}" value="b">
+    ${arr[i].b}<input class="radio" type="radio"name="question${i}" value="c"> ${arr[i].c} <br></div>`)
+        }
+        document.write(`<br><br><button id="btn">Cavabla</button> <div class="answer"><h2 id="duz"></h2><h2 id="sehv"></h2></div>`)
+        var btn = document.getElementById("btn");
+        btn.addEventListener("click", answer);
+        var say = 0;
+        var yoxla = 0;
+        function answer() {
+            for (i = 0; i < arr.length; i++) {
+                if (document.querySelector(`input[name=question${i}]:checked`) == null) {
+                    alert("suallari hamisin cavablandirin")
+                    yoxla = 0;
+                    // break;
+                } else {
+                    var x = document.querySelector(`input[name=question${i}]:checked`).value;
+                    yoxla = 1;
+                    if (x == arr[i].cavab) {
+                        say = say + 1;
+
+                    }
+                    btn.disabled=true;
+                }
+
+
+            }
+            var sehv = document.getElementById("sehv");
+            var duz = document.getElementById("duz");
+
+            if (yoxla == 1) {
+                duz.innerHTML = "DÜZGÜN CAVABLARIN  SAYI:" + say;
+                sehv.innerHTML = "SEHV CAVABLARIN  SAYI:" + (arr.length - say);
+            }
+
+
+
+
+            //   var x=  document.querySelector('input[name="gender"]:checked').value;
+            //   console.log(x)
+        }
+
+    </script>
+</body>
+
+</html>
